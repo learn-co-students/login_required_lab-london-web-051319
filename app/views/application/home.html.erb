@@ -1,0 +1,7 @@
+<%if session[:name].nil? %>
+<%= redirect_to 'Login', session_new_path %>
+<%else%>
+
+<h1>Welcome!</h1>
+
+<%end%>
